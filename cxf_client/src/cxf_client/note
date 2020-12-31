@@ -1,0 +1,32 @@
+client outbound message: 加拦截器后的显示
+
+ID: 1
+Address: http://127.0.0.1:8181/hihi
+Encoding: UTF-8
+Content-Type: text/xml
+Headers: {Accept=[*/*], SOAPAction=[""]}
+Payload: 
+<soap:Envelope xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+    
+	<soap:Body>
+		<ns2:sayHello xmlns:ns2="http://cxf_server/">
+			<arg0>444444</arg0>
+		</ns2:sayHello>
+	</soap:Body>
+</soap:Envelope>
+
+<?xml version="1.0" encoding="UTF-8"?>
+<soap:Envelope
+	xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+	<soap:Header>
+		<authInfo>
+			<username>xiaohei</username>
+			<password>333</password>
+		</authInfo>
+	</soap:Header>
+	<soap:Body>
+		<ns2:sayHello xmlns:ns2="http://cxf_server/">
+			<arg0>444444</arg0>
+		</ns2:sayHello>
+	</soap:Body>
+</soap:Envelope>
